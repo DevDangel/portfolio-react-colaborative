@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url('../imgs/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Opcional, para efecto parallax */
+    min-height: 100vh; /* Asegura que el body tenga al menos el alto de la pantalla */
+}
+.main{
+    display: flex;
+    gap: 5%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    padding: 60px;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    gap: calc(30% / 3);
+}
+.profile img{
+    width: 500px;
+    border-radius: 50%;
+}
+
+
+.skills{
+    display: flex;
+    gap: calc(10% / 3);
+    width: 100%;
+    height: auto;
+}
+.skills-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-group img{
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid rgb(36, 33, 33);
+}
+.skills-group img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    background-image: url('../imgs/hover-img.jpeg');
+}
+.skills-group p{
+    font-size: 25px;
+}
