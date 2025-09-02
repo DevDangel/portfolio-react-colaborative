@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: auto;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.whatsapp {
+  margin: 10px 0;
+}
+
+.whatsapp a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #25d366; /* verde oficial de WhatsApp */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.whatsapp a svg {
+  fill: #25d366; /* el ícono también en verde */
+}
+
+.whatsapp a:hover {
+  text-decoration: underline;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;          /* espacio entre icono y texto */
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor; /* hereda color del texto */
+}
+
