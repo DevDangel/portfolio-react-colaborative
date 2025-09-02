@@ -1,0 +1,107 @@
+/* Responsive styles for mobile, tablet, and desktop */
+
+/* Mobile first (max-width: 600px) */
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .profile img, .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+  .skills {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .skills-group img {
+    width: 120px;
+    height: 100px;
+  }
+  .bio {
+    gap: 15px;
+    padding: 10px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/* Tablet (min-width: 601px) and (max-width: 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+  }
+  .profile img, .profile-img {
+    width: 300px;
+    height: 300px;
+  }
+  .skills {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .skills-group img {
+    width: 150px;
+    height: 130px;
+  }
+  .bio {
+    gap: 20px;
+    padding: 20px;
+  }
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+
+/* Desktop (min-width: 901px) */
+@media (min-width: 901px) {
+  .main {
+    flex-direction: row;
+    padding: 60px;
+    gap: 5%;
+  }
+  .profile img, .profile-img {
+    width: 500px;
+    height: 500px;
+  }
+  .skills {
+    flex-direction: row;
+    gap: calc(10% / 3);
+  }
+  .skills-group img {
+    width: 200px;
+    height: 180px;
+  }
+  .bio {
+    gap: calc(30% / 3);
+    padding: 30px;
+  }
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+  }
+}

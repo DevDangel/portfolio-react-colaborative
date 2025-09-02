@@ -1,7 +1,7 @@
-import './styles/footer.css';
+import '../styles/footer.css';
 
 // 👉 Función que crea el footer dinámico
-function createFooter(): HTMLElement {
+export function createFooter(): HTMLElement {
   const footer = document.createElement("footer");
   footer.className = "footer";
 
@@ -79,7 +79,7 @@ function createFooter(): HTMLElement {
 const app = document.querySelector<HTMLDivElement>("#app");
 if (app) {
   const main = document.createElement("main");
-  main.innerHTML = `<h1 style="text-align:center; margin-top:50px;">Contenido de la página</h1>`;
+  main.innerHTML;
 
   app.appendChild(main);
   app.appendChild(createFooter());

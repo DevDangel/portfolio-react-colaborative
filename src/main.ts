@@ -1,9 +1,24 @@
+ 
+import { About } from './components/About';
+import { renderHeader } from './components/header';
+import { createFooter } from './components/footer';
 
-import './styles/style.css'
+const app = document.querySelector<HTMLDivElement>('#app');
+if (app) {
+	// Limpiar el contenido previo
+	app.innerHTML = '';
 
-import { setupCounter } from './counter.ts'
-import { About } from './components/About'
+	// Header
+	const header = document.createElement('div');
+	header.id = 'header';
+	app.appendChild(header);
+	renderHeader();
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = About();
+	// Main (About)
+	const main = document.createElement('main');
+	main.innerHTML = About();
+	app.appendChild(main);
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+	// Footer
+	app.appendChild(createFooter());
+}

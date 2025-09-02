@@ -1,3 +1,5 @@
+
+import '../styles/header.css';
 export function renderHeader(): void {
   const header: HTMLDivElement | null = document.querySelector<HTMLDivElement>("#header");
 
