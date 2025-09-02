@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;       
+  align-items: center;  
+  gap: 15px;           
+}
+
+.social-icons a {
+  font-size: 32px;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+  text-decoration: none; 
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000000;
+  color: white;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 29px;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Facebook */
+.social-icons a[href*="facebook"]:hover {
+  color: #1877f2;
+}
+
+/* Twitter */
+.social-icons a[href*="twitter"]:hover {
+  color: #1da1f2;
+}
+
+/* Instagram con gradiente */
+.social-icons a[href*="instagram"]:hover {
+  background: linear-gradient(45deg, #f58529, #f77737, #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* TikTok con gradiente turquesa + rojo */
+.social-icons a[href*="tiktok"]:hover {
+  background: linear-gradient(10deg, #00fff7, #ff0033);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
