@@ -1,19 +1,28 @@
 import '../styles/about.css';
 import foto1 from '../imgs/foto1.jpg';
-import skills1 from '../imgs/skills.jpg';
+import estudios from '../imgs/estudios.jpg';
+import proyectos from '../imgs/skills.jpg';
+import experiencias from '../imgs/experiencias.png';
+
 
 export function About(): string {
     // ...existing code...
-    setTimeout(() => {
-        document.querySelectorAll('.img-skills-group').forEach(img => {
-            img.addEventListener('mouseenter', () => {
-                (img as HTMLImageElement).src = 'src/imgs/hover-img.jpeg';
+        setTimeout(() => {
+            const hoverImages = [
+                'src/imgs/hover-img.jpeg',
+                'src/imgs/proyectos-hover.jpg',
+                'src/imgs/experiencias-hover.jpg'
+            ];
+            const originalImages = [estudios, proyectos, experiencias];
+            document.querySelectorAll('.img-skills-group').forEach((img, i) => {
+                img.addEventListener('mouseenter', () => {
+                    (img as HTMLImageElement).src = hoverImages[i];
+                });
+                img.addEventListener('mouseleave', () => {
+                    (img as HTMLImageElement).src = originalImages[i];
+                });
             });
-            img.addEventListener('mouseleave', () => {
-                (img as HTMLImageElement).src = skills1;
-            });
-        });
-    }, 0);
+        }, 0);
     return `
     <div class="main">
         <div class="profile">
@@ -26,15 +35,15 @@ export function About(): string {
             </div>
             <div class="skills">
                <div class="skills-group">
-                    <img class="img-skills-group" src="${skills1}" alt="Skills">
+                    <img class="img-skills-group" src="${estudios}" alt="Skills">
                     <p class="p-skills-group">Titulos</p>
                </div>
                <div class="skills-group">
-                    <img class="img-skills-group" src="${skills1}" alt="Skills">
+                    <img class="img-skills-group" src="${proyectos}" alt="Skills">
                     <p class="p-skills-group">Proyectos</p>
                </div>
                <div class="skills-group">
-                    <img class="img-skills-group" src="${skills1}" alt="Skills">
+                    <img class="img-skills-group" src="${experiencias}" alt="Skills">
                     <p class="p-skills-group">Experiencia</p>
                </div>
             </div>
