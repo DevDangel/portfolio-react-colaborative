@@ -3,15 +3,18 @@ import foto1 from '../imgs/foto1.jpg';
 import estudios from '../imgs/estudios.jpg';
 import proyectos from '../imgs/skills.jpg';
 import experiencias from '../imgs/experiencias.png';
+import hoverImg from '../imgs/hover-img.jpeg';
+import proyectosHover from '../imgs/proyectos-hover.jpg';
+import experienciasHover from '../imgs/experiencias-hover.jpg';
 
 
 export function About(): string {
     // ...existing code...
         setTimeout(() => {
             const hoverImages = [
-                'src/imgs/hover-img.jpeg',
-                'src/imgs/proyectos-hover.jpg',
-                'src/imgs/experiencias-hover.jpg'
+                hoverImg,
+                proyectosHover,
+                experienciasHover
             ];
             const originalImages = [estudios, proyectos, experiencias];
             document.querySelectorAll('.img-skills-group').forEach((img, i) => {
