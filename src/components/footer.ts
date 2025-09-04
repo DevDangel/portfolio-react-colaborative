@@ -74,13 +74,3 @@ export function createFooter(): HTMLElement {
 
   return footer;
 }
-
-// 👉 Montar dentro de #app
-const app = document.querySelector<HTMLDivElement>("#app");
-if (app) {
-  const main = document.createElement("main");
-  main.innerHTML;
-
-  app.appendChild(main);
-  app.appendChild(createFooter());
-}

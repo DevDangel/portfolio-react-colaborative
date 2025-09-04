@@ -8,7 +8,7 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #e0e0e0 0%, #bdbdbd 50%, #757575 100%);
+    background-image: url('../imgs/background.mp4');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -22,6 +22,8 @@ body{
     max-height: 100%;
     width: 100%;
     padding: 60px;
+    z-index: -1;
+    color: white;
 }
 .bio{
     display: flex;
@@ -32,7 +34,7 @@ body{
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid rgb(255, 255, 255);
 }
 
 
@@ -56,8 +58,23 @@ body{
 .skills-group img:hover{
     transform: scale(1.05);
     transition: transform 0.3s, background-image 54s;
-    background-image: url('../imgs/hover-img.jpeg');
 }
 .skills-group p{
     font-size: 25px;
+}
+.about-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Mantiene el video detrás */
 }

@@ -1,24 +1,20 @@
- 
-import { About } from './components/About';
-import { renderHeader } from './components/header';
+
+import {About} from './components/About'
 import { createFooter } from './components/footer';
+import { renderHeader } from './components/header';
+
 
 const app = document.querySelector<HTMLDivElement>('#app');
-if (app) {
-	// Limpiar el contenido previo
-	app.innerHTML = '';
 
-	// Header
+if (app){
+	// componente header
 	const header = document.createElement('div');
-	header.id = 'header';
-	app.appendChild(header);
+	header.id = 'header'
+	//componente about
+	const about = document.createElement('main-about');
+	about.innerHTML = About();
+
+	app.replaceChildren(header,about,createFooter());
+
 	renderHeader();
-
-	// Main (About)
-	const main = document.createElement('main');
-	main.innerHTML = About();
-	app.appendChild(main);
-
-	// Footer
-	app.appendChild(createFooter());
 }
