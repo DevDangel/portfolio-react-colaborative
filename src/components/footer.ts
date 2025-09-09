@@ -9,7 +9,12 @@ export function createFooter(): HTMLElement {
   const linksDiv = document.createElement("div");
   linksDiv.className = "footer-links";
 
-  const links = [
+  type link={
+    text:string;
+    href:string;
+    icon:string;
+  }
+  const links: link[] = [
     { 
       text: "Facebook", 
       href: "#", 
@@ -47,7 +52,7 @@ export function createFooter(): HTMLElement {
   });
 
   // contenedor WhatsApp
-  const whatsappDiv = document.createElement("div");
+  const whatsappDiv:HTMLDivElement = document.createElement("div");
   whatsappDiv.className = "whatsapp";
 
   const whatsappLink = document.createElement("a");

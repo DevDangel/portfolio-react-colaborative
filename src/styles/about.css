@@ -23,7 +23,7 @@ body{
     width: 100%;
     padding: 60px;
     z-index: -1;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .bio{
     display: flex;
@@ -62,13 +62,14 @@ body{
 .skills-group p{
     font-size: 25px;
 }
+/*PARA EL VIDEO*/
 .about-container {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
-
+/*****************/
 .video-background {
   position: absolute;
   top: 0;
@@ -77,4 +78,12 @@ body{
   height: 100%;
   object-fit: cover;
   z-index: -1; /* Mantiene el video detrás */
+}
+
+.description{
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.6;
+    text-align: justify;
 }
